@@ -47,7 +47,8 @@ class ActiveEntityManager extends \Doctrine\ORM\EntityManager
     {
         parent::__construct($conn, $config, $eventManager);
 
-        $metadataFactory = new ActiveClassMetadataFactory($this);
+        $metadataFactory = new ActiveClassMetadataFactory();
+        $metadataFactory->setEntityManager($this);
         $metadataFactory->setCacheDriver($this->getConfiguration()->getMetadataCacheImpl());
         
         // now this is the only hack required to get it work:
