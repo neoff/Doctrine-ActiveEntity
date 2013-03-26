@@ -1,5 +1,5 @@
 {
-    "name": "doctrine/Doctrine-ActiveEntity",
+    "name": "neoff/Doctrine-ActiveEntity",
     "type": "library",
     "description": "Doctrine2 ActiveRecord extension",
     "keywords": [],
